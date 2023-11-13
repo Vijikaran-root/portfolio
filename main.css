@@ -1,0 +1,333 @@
+*{
+    background-color: black;
+    color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+nav{
+  background-color: black;
+  width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+.desk-nav-opt{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+#mob-nav-opt{
+    display: none;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: grey;
+    padding-top: 50px;
+}
+
+.mob-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.desk-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+  }
+  
+  .btn {
+    --primary-color: white;
+    --hovered-color: red;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .btn p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color)
+  }
+  
+  .btn::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  .btn p::before {
+    position: absolute;
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  .btn:hover::after {
+    width: 100%;
+  }
+  
+  .btn:hover p::before {
+    width: 100%;
+  }
+  
+  .ham{
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 35px;
+  }
+.mob{
+    display: none;
+}
+
+  @media (max-width:800px) {
+    .mob{
+        display: block;
+    }
+    .desk{
+        display: none;
+    }
+  }
+
+
+  .vs{
+    float: left;
+  }
+
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+
+  .vijimage{
+    margin: 0;
+    position: relative; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+  }
+
+  .vijimage1{
+    margin: 0;
+    position: relative; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    margin-top: 250px;
+  }
+
+  .hometext{
+    margin: 0;
+    position: relative; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 500px;
+    margin-top: 150px;
+    text-align: center;
+  }
+
+
+  .hometext1{
+    margin: 0;
+    text-align: center;
+  }
+
+  .hireme{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: grey;
+    border-color: black;
+    color: black;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .hireme:hover {
+    border: 2px solid red;
+    transform: scale(1.02);
+  }
+
+  .hireme a{
+    background-color: grey;
+    color: black;
+  }
+
+  nav{
+    background-color: black;
+    width: 100%;
+    height: 25px;
+  }
+
+
+
+  .parent1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div11 { grid-area: 1 / 1 / 2 / 2; }
+    .div21 { grid-area: 2 / 1 / 3 / 2; }
+    .div31 { grid-area: 3 / 1 / 4 / 2; }
+
+
+
+    .card {
+      box-sizing: border-box;
+      background: grey;
+      border: 1px solid white;
+      box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+      border-radius: 17px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.5s;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      font-weight: bolder;
+      color: black;
+      margin: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    
+    .card:hover {
+      border: 2px solid red;
+      transform: scale(1.02);
+    }
+
+    .test{
+      background-color: grey;
+      color: black;
+    }
+
+
+    .sub{
+      background-color: grey;
+      width: 75%;
+      height: 50px;
+      border-radius: 10px;
+      padding: 6px 12px;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      border-color: red;
+    }
+
+    .sub::placeholder{
+      color: rgb(53, 53, 53);
+    }
+
+    .textarea {
+      height: 150px;
+      padding: 15px 12px;
+      box-sizing: border-box;
+      resize: vertical;
+      background-color: grey;
+      width: 82%;
+      border-color: red;
+      border-radius: 10px;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .textarea1 {
+      height: 150px;
+      padding: 15px 12px;
+      box-sizing: border-box;
+      resize: vertical;
+      background-color: grey;
+      width: 77%;
+      border-color: red;
+      border-radius: 10px;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    textarea::placeholder{
+      color: rgb(53, 53, 53);
+    }
+
+
+    .consub{
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 20px;
+      border-radius: 10px;
+      font-size: 15px;
+      background-color: grey;
+      border-color: black;
+      color: black;
+      font-weight: bold;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+    .consub:hover {
+      border: 2px solid red;
+      transform: scale(1.02);
+    }
+  
+    .consub a{
+      background-color: grey;
+      color: black;
+    }
+
+
+    .test1{
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+    .test1:hover {
+      transform: scale(1.10);
+    }
