@@ -1,1 +1,1 @@
-https://github.com/Vijikaran-root/portfolio
+https://vijikaran-root.github.io/portfolio/
